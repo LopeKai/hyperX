@@ -1,0 +1,18 @@
+.Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-red);
+    background-color: var(--color-red);
+    width: 133px;
+    height: 42px;
+    border-radius: 4px;
+    color: var(--color-white);
+    font-family: 'Helvetica';
+    cursor: pointer;
+    transition: background 300ms;
+
+    &:hover {
+        background-color: var(--color-red-dark)
+    }
+}

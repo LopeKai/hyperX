@@ -1,0 +1,211 @@
+.Home {
+    padding: 32px 0px;
+
+    &-containerImg {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+
+        .img-wrapper {
+            display: block;
+            width: 100%;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &-containerTitle {
+        margin-top: 14px;
+
+        h3 {
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        p {
+            margin: 39px 0 30px;
+        }
+    }
+}
+
+.peripherals {
+    background-color: var(--color-white);
+
+    &-container {
+        .cards {
+            .card {
+                display: block;
+                margin-bottom: 18px;
+
+                &-containerImg {
+                    display: block;
+                    height: 200px;
+                    max-height: 100%;
+                    overflow: hidden;
+
+                    img {
+                        transition: ease-in-out 300ms;
+                    }
+
+                    img:hover {
+                        transform: scale(1.05);
+                    }
+                }
+
+                &-containerTitle {
+                    background-color: #f4f4f4;
+                    padding: 0.875rem 1.25rem;
+
+                    h4 {
+                        color: var(--color-dark);
+                        font-weight: 500;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        color: var(--color-border);
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.heroes {
+    background-color: var(--color-white);
+
+    .heroes-title {
+        padding: 2rem;
+        padding-top: 0;
+
+        h2 {
+            text-align: center;
+            color: var(--color-dark);
+            font-size: 28px;
+            font-weight: 300;
+            font-family: "Helvetica";
+        }
+    }
+
+    &_cards {
+        &-card {
+            position: relative;
+            display: block;
+            height: 18.25rem;
+            width: 100%;
+            margin-left: 0;
+            overflow: hidden;
+
+            &:hover .heroes_cards-card_name h4 {
+                color: var(--color-yellow);
+            }
+
+
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border: 1px solid blue;
+            }
+
+            picture {
+                display: inline-block;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    min-height: 18.25rem;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &_name {
+                display: block;
+                width: 18.25rem;
+                background: linear-gradient(to bottom, transparent 0, #000 100%);
+                position: absolute;
+                bottom: 0;
+                padding: 10% 0.75rem 0.75rem;
+                overflow: hidden;
+
+                h4 {
+                    font-size: 1.375rem;
+                    line-height: 1.12;
+                    font-weight: 600;
+                    max-width: 80%;
+                    font-family: "Helvetica";
+                    color: var(--color-white);
+                    hyphens: auto;
+                    margin: auto;
+                    text-align: center;
+                }
+
+            }
+
+            &:nth-child(1) {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+            }
+
+            &:nth-child(2) {
+                clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+                margin-top: -3.125rem;
+
+                .heroes_cards-card_name {
+                    transform-origin: bottom left;
+                    transform: rotate(-90degs);
+                }
+            }
+
+            &:nth-child(3) {
+                clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+                margin-top: -3.125rem;
+            }
+        }
+
+        .heroes_cards-card:nth-child(1) {
+            .heroes_cards-card_name {
+                left: 100%;
+                transform-origin: bottom left;
+                transform: rotate(-90deg);
+
+                h4 {
+                    transform: translateX(5%);
+                }
+            }
+        }
+
+        .heroes_cards-card:nth-child(2) {
+         
+            .heroes_cards-card_name {
+                right: 100%;
+                transform-origin: bottom right;
+                transform: rotate(90deg);
+
+                h4 {
+                    transform: translateX(0);
+                }
+            }
+        }
+
+        .heroes_cards-card:nth-child(3) {
+            .heroes_cards-card_name {
+                left: 100%;
+                transform-origin: bottom left;
+                transform: rotate(-90deg);
+
+                h4 {
+                    transform: translateX(5%);
+                }
+            }
+        }
+    }
+}
