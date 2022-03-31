@@ -40,19 +40,19 @@ export default function Header(props) {
                             <Link to="/headsets">Headsets Gamer</Link>
                         </li>
                         <li>
-                            <a href="/">Fones de ouvido</a>
+                            <Link to="/earbuds">Fones de ouvido</Link>
                         </li>
                         <li>
-                            <a href="/">Microfones</a>
+                            <Link to="/mic">Microfones</Link>
                         </li>
                         <li>
-                            <a href="/">Teclados</a>
+                            <Link to="/keabords">Teclados</Link>
                         </li>
                         <li>
-                            <a href="/">Memória</a>
+                            <a href="https://www.kingston.com/br/memory/gaming" target="_blank">Memória</a>
                         </li>
                         <li>
-                            <a href="/">Mouse</a>
+                            <Link to="/mice">Mouse</Link>
                         </li>
                         <li>
                             <a href="/">Mouse Pads</a>

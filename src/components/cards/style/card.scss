@@ -1,7 +1,7 @@
 .card__products {
     position: relative;
     width: 100%;
-    height: 740px;
+    height: 760px;
     margin-bottom: 18px;
 
     &-container {
@@ -12,6 +12,8 @@
 
                 img {
                     width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
 
@@ -39,7 +41,7 @@
 
             .containerButton {
                 position: absolute;
-                bottom: 1px;
+                bottom: 0px;
             }
         }
     }

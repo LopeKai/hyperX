@@ -10,185 +10,136 @@
     }
 
     &__container {
-        &-shortcut {
-            background-color: var(--color-red);
-            color: var(--white);
-            padding-top: 1.875em;
+        .headsets__consoles {
+            background-color: var(--color-red-dark);
+            color: var(--color-white);
+            height: 40px;
+            font-weight: 300;
 
-            .headsets__cards {
+            &-container {
+                width: 100%;
+                height: 100%;
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                padding-left: 1.25rem;
-                padding-right: 1.25rem;
+                align-items: center;
+                padding: 0px 60px;
 
-                &-card {
-                    min-width: 210px;
-                    max-width: 220px;
-                    height: 160px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    > img {
-                        height: 5em;
-                        margin-bottom: 20px;
-                        transition: 400ms ease;
-                    }
-
-                    > div {
-                        display: flex;
-                        flex: 1;
-                        flex-direction: column;
-                        align-items: center;
-
-                        a {
-                            color: var(--color-white);
-
-                            &:nth-child(1) {
-                                margin-bottom: 18px;
-                            }
-                        }
-                    }
-
-                    &:hover > img {
-                        opacity: 0.7;
-                    }
-                }
-            }
-
-            .headsets__consoles {
-                background-color: var(--color-red-dark);
-                color: var(--color-white);
-                height: 40px;
-                font-weight: 300;
-
-                &-container {
+                ul {
+                    list-style: none;
                     width: 100%;
                     height: 100%;
                     display: flex;
-                    align-items: center;
-                    padding: 0px 60px;
+                    justify-content: space-around;
 
-                    ul {
-                        list-style: none;
-                        width: 100%;
+                    li {
                         height: 100%;
-                        display: flex;
-                        justify-content: space-around;
 
-                        li {
+                        a {
+                            display: inline-block;
                             height: 100%;
-
-                            a {
-                                display: inline-block;
-                                height: 100%;
-                                color: var(--color-white);
-                                align-items: center;
-                                padding: 0 7px;
-                                padding-top: 11px;
-                            }
-
-                            &:hover {
-                                text-decoration: underline;
-                                background-color: rgb(108, 15, 21);
-                            }
+                            color: var(--color-white);
+                            align-items: center;
+                            padding: 0 7px;
+                            padding-top: 11px;
                         }
-                    }
-                }
-            }
-        }
 
-        .headsets__xbox {
-            background-color: #efefef;
-
-            &-heading {
-                padding: 2.5em 1em 1.5em;
-                background-color: #000;
-                > div {
-                    h2 {
-                        font-size: 28px;
-                        font-weight: 400;
-                        text-transform: uppercase;
-                    }
-                }
-            }
-    
-            &-container {
-                padding: 15px;
-                grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
-    
-                .productCard {
-                    height: 110px;
-                    display: flex;
-                    padding: 10px 30px;
-                    column-gap: 10px;
-                    background-color: var(--color-white);
-                    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 0 0.75em 0.125em transparent;
-                    border-radius: 4px;
-                    transition: box-shadow 300ms ease;
-                    margin-bottom: 15px;
-    
-                    &:hover {
-                        box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 1px 0.5em 0 rgb(0 0 0 / 20%);
-                    }
-    
-                    .containerImg {
-                        display: flex;
-                        width: 6em;
-                        height: auto;
-                        justify-content: center;
-                        align-items: center;
-    
-                        img {
-                            max-height: 6em;
+                        &:hover {
+                            text-decoration: underline;
+                            background-color: rgb(108, 15, 21);
                         }
-                    }
-    
-                    .containerTitle {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        height: 70%;
-                        padding: 10px;
-    
-                        span {
-                            font-size: 16px;
-                            font-weight: 500;
-                            color: #353535;
-                        }
-    
-                        button {
-                            display: block;
-                            width: 90px;
-                            border: none;
-                            background: none;
-                            color: #ca2026;
-                            font-size: 12px;
-                            font-weight: 300;
-                            text-transform: uppercase;
-                            cursor: pointer;
-                        }
-                    }
-                }
-            }
-        }
-
-        .section__filter {
-            background-color: var(--color-white)!important;
-
-            &-container {
-                padding: 1.5em;
-
-                > div {
-                    margin: 1.25em 0 0;
-                    p {
-                        color: #000;
-                        font-size: 1em;
                     }
                 }
             }
         }
     }
 
+    .headsets__xbox {
+        background-color: #efefef;
+
+        &-heading {
+            padding: 2.5em 1em 1.5em;
+            background-color: #000;
+            > div {
+                h2 {
+                    font-size: 28px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        &-container {
+            padding: 15px;
+            grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+
+            .productCard {
+                height: 110px;
+                display: flex;
+                padding: 10px 30px;
+                column-gap: 10px;
+                background-color: var(--color-white);
+                box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 0 0.75em 0.125em transparent;
+                border-radius: 4px;
+                transition: box-shadow 300ms ease;
+                margin-bottom: 15px;
+
+                &:hover {
+                    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 1px 0.5em 0 rgb(0 0 0 / 20%);
+                }
+
+                .containerImg {
+                    display: flex;
+                    width: 6em;
+                    height: auto;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        max-height: 6em;
+                    }
+                }
+
+                .containerTitle {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 70%;
+                    padding: 10px;
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #353535;
+                    }
+
+                    button {
+                        display: block;
+                        width: 90px;
+                        border: none;
+                        background: none;
+                        color: #ca2026;
+                        font-size: 12px;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .section__filter {
+        background-color: var(--color-white) !important;
+
+        &-container {
+            padding: 1.5em;
+
+            > div {
+                margin: 1.25em 0 0;
+                p {
+                    color: #000;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
 }

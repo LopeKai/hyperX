@@ -1,5 +1,7 @@
 import React from 'react'
 
+import ProductShortcut from '../../components/productShortcut/ProcuctShortcut'
+
 import iconStinger from '../../assets/headsets/icons/cloud-stinger.svg'
 import iconCore from '../../assets/headsets/icons/cloud-core.svg'
 import iconAlphaS from '../../assets/headsets/icons/cloud-alphaS.svg'
@@ -36,62 +38,18 @@ import './style/headsets.scss'
 
 export default function Headsets(props) {
     return (
-        <div className="headsets">
+        <section className="headsets">
             <div className="headsets__container">
-
                 <section className="headsets__container-shortcut">
-                    <div className="headsets__cards">
-                        <div className="headsets__cards-card">
-                            <img src={iconStinger} alt="Headset Cloud Stinger" />
-                            <div className="shortcut-containerTitle">
-                                <a href="/">Cloud Stinger</a>
-                            </div>
-                        </div>
-                        <div className="headsets__cards-card">
-                            <img src={iconCore} alt="Headset Cloud Core" />
-                            <div className="shortcut-containerTitle">
-                                <a href="/">Cloud</a>
-                                <a href="/">Cloud Core Wireless</a>
-                            </div>
-                        </div>
-                        <div className="headsets__cards-card">
-                            <img src={iconAlphaS} alt="Headset Cloud Alpha S" />
-                            <div className="shortcut-containerTitle">
-                                <a href="/">Cloud Alpha S</a>
-                                <a href="/">Cloud Alpha</a>
-                            </div>
-                        </div>
-                        <div className="headsets__cards-card">
-                            <img src={iconRevolver} alt="Headset Cloud Revolver" />
-                            <div className="shortcut-containerTitle">
-                                <a href="/">Cloud Revolver</a>
-                            </div>
-                        </div>
-                        <div className="headsets__cards-card">
-                            <img src={iconFlight} alt="Headset Cloud Flight S" />
-                            <div className="shortcut-containerTitle">
-                                <a href="/">Cloud Flight S</a>
-                                <a href="/">Cloud Flight</a>
-                            </div>
-                        </div>
-                        <div className="headsets__cards-card">
-                            <img src={iconOrbit} alt="Cloud Orbit" />
-                            <div className="shortcut-containerTitle">
-                                <a href="/">Cloud Orbit</a>
-                            </div>
-                        </div>
-                        <div className="headsets__cards-card">
-                            <img src={iconMix} alt="Cloud Mix" />
-                            <div className="shortcut-containerTitle">
-                                <a href="/">Cloud MIX</a>
-                            </div>
-                        </div>
-                        <div className="headsets__cards-card">
-                            <img src={iconAcessories} alt="Acessories" />
-                            <div className="shortcut-containerTitle">
-                                <a href="/">Acessories</a>
-                            </div>
-                        </div>
+                    <div className="flex__container-cards">
+                       <ProductShortcut img={iconStinger} description="Cloud Stinger"/>
+                       <ProductShortcut img={iconCore} description="Cloud" />
+                       <ProductShortcut img={iconAlphaS} description="Cloud Alpha S" />
+                       <ProductShortcut img={iconRevolver} description="Cloud Revolver" />
+                       <ProductShortcut img={iconFlight} description="Cloud Flight S" />
+                       <ProductShortcut img={iconOrbit} description="Cloud Orbit" />
+                       <ProductShortcut img={iconMix} description="Cloud MIX" />
+                       <ProductShortcut img={iconAcessories} description="Acessories" />
                     </div>
                     <div className="headsets__consoles">
                         <div className="headsets__consoles-container">
@@ -290,6 +248,6 @@ export default function Headsets(props) {
                 </section>
 
             </div>
-        </div>
+        </section>
     )
 }

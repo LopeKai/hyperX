@@ -1,0 +1,42 @@
+.product__shortcut-card {
+    min-width: 210px;
+    max-width: 220px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > a {
+        display: block;
+        width: 150px;
+        max-width: 225px;
+        height: 5em;
+        max-height: 5em;
+
+        > img {
+            width: 100%;
+            height: 100%;
+            transition: 400ms ease;
+        }
+    }
+
+    .shortcut-containerTitle {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+
+        a {
+            color: var(--color-white);
+
+            &:nth-child(1) {
+                margin-bottom: 18px;
+            }
+        }
+    }
+
+    &:hover > a img {
+        opacity: 0.7;
+    }
+}

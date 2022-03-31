@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
 
 :root {
   --color-dark: #000;
@@ -18,12 +18,13 @@
   box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
   height: 100%;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(--color-dark);
 }
 
@@ -31,7 +32,12 @@ body.active {
   overflow-y: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--color-white);
   text-align: start;
 }
@@ -65,7 +71,6 @@ img {
   padding-bottom: 20px;
 }
 
-
 .img-wrapper {
   display: block;
   width: 100%;
@@ -78,6 +83,13 @@ img {
   object-fit: cover;
 }
 
-
-
-
+.flex__container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: var(--color-red);
+  color: var(--white);
+  padding-top: 1.875em;
+}
