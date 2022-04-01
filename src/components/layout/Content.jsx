@@ -8,6 +8,7 @@ import Mic from '../../pages/mic/Mic'
 import Keabords from '../../pages/keabords/Keabords'
 import Mice from '../../pages/mice/Mice'
 import MousePads from '../../pages/mousePads/MousePads'
+import Power from '../../pages/power/Power'
 
 export default function Content() {
     return (
@@ -32,6 +33,9 @@ export default function Content() {
             </Routes>
             <Routes>
                 <Route path="/mouse-pad" element={<MousePads />} />
+            </Routes>
+            <Routes>
+                <Route path="power" element={<Power />}  />
             </Routes>
         </main>
     )

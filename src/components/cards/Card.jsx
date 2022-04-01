@@ -16,14 +16,15 @@ export default function Card(props) {
                         <img src={props.img} alt="" />
                     </div>
                     <div className="containerTitle padd-16">
-                        <h1 
-                            className={props.titleLarge ? "titleLarge" : "title"}>
-                            {props.title}
-                        </h1>
-                        <p>{props.text}</p>
-                    </div>
-                    <div className='containerButton padd-16 '>
-                        <Button>Saiba mais</Button>
+                        <article>
+                            <h1
+                                className={props.titleLarge ? "titleLarge" : "title"}>
+                                {props.title}
+                            </h1>
+                            <p>{props.text}</p>
+
+                            <Button>Saiba mais</Button>
+                        </article>
                     </div>
                 </div>
             </div>

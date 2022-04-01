@@ -56,7 +56,7 @@ export default function Header(props) {
                             <Link to="/mouse-pad">Mouse Pads</Link>
                         </li>
                         <li>
-                            <a href="/">Carregadores</a>
+                            <Link to="/power">Carregadores</Link>
                         </li>
                         <li>
                             <a href="/">Armazenamento</a>
