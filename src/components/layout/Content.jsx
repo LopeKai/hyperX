@@ -7,6 +7,7 @@ import Earbuds from '../../pages/earbuds/Earbuds'
 import Mic from '../../pages/mic/Mic'
 import Keabords from '../../pages/keabords/Keabords'
 import Mice from '../../pages/mice/Mice'
+import MousePads from '../../pages/mousePads/MousePads'
 
 export default function Content() {
     return (
@@ -28,6 +29,9 @@ export default function Content() {
             </Routes>
             <Routes>
                 <Route path="/mice" element={<Mice />}/>
+            </Routes>
+            <Routes>
+                <Route path="/mouse-pad" element={<MousePads />} />
             </Routes>
         </main>
     )

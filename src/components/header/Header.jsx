@@ -17,8 +17,6 @@ export default function Header(props) {
         navegation.classList.toggle("navegation-active")
 
         document.body.classList.toggle('active')
-
-    
     }
 
     return (
@@ -55,7 +53,7 @@ export default function Header(props) {
                             <Link to="/mice">Mouse</Link>
                         </li>
                         <li>
-                            <a href="/">Mouse Pads</a>
+                            <Link to="/mouse-pad">Mouse Pads</Link>
                         </li>
                         <li>
                             <a href="/">Carregadores</a>
