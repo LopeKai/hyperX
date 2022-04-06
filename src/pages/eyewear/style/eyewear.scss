@@ -1,0 +1,178 @@
+.eyewear {
+    &__container {
+        &-hyperxSpectre {
+            a {
+                .containerTitle {
+                    &-title {
+                        background-color: var(--color-red);
+                        padding: 1.5em;
+
+                        h2 {
+                            font-size: 26px;
+                            font-weight: 400;
+                            line-height: 26px;
+                        }
+                    }
+
+                    &-assist {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        padding: 0.5em;
+                    }
+                }
+            }
+        }
+
+        .spectreEyewear {
+            background-color: var(--color-white);
+
+            &__container {
+                position: relative;
+                height: 100%;
+
+                &-title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #efefef;
+                    padding: 0.3em 0.3em 0.3em 1.5em;
+
+                    > div {
+                        display: flex;
+                        flex-basis: 70%;
+                        align-items: center;
+                        column-gap: 15px;
+                        cursor: pointer;
+
+                        span {
+                            font-size: 18px;
+                            font-weight: 300;
+                        }
+
+                        img {
+                            width: 25px;
+                        }
+                    }
+
+                    .btn-buy {
+                        display: inline-block;
+                        width: 115px;
+                        height: 30px;
+                        background-color: var(--color-red);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: var(--color-white);
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+
+        .hyperxSpectre {
+            background-color: var(--color-white);
+
+            &__container {
+                padding: 1.5rem;
+                padding-bottom: 3em;
+
+                &-title {
+                    h2 {
+                        font-size: 34px;
+                        font-weight: 300;
+                        color: var(--color-dark);
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 300;
+                        color: var(--color-dark);
+                        line-height: 27px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                &-decription {
+                    ul {
+                        list-style: none;
+
+                        li {
+                            display: flex;
+                            align-items: center;
+                            column-gap: 10px;
+                            margin-bottom: 20px;
+
+                            span {
+                                font-size: 16px;
+                                font-weight: 300;
+                            }
+
+                            a {
+                                color: #ca2026;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .characteristics {
+            &__container {
+                .container__title {
+                    background-color: #f4f4f4;
+                    padding: 1.5em;
+
+                    h2 {
+                        color: var(--color-dar);
+                        font-size: 28px;
+                        font-weight: 400;
+                    }
+                }
+
+                .container__products-characteristics {
+                    display: grid;
+                    grid-template-columns: repeat(1,100%);
+                    grid-template-rows: repeat(4,530px);
+
+                    .characteristics__card {
+                        position: relative;
+
+                        &-containerImg {
+                            width: 100%;
+                            height: 100%;
+
+                            picture img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        &-containerTitle {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            padding: 1.25em;
+                            background-color: rgba(0, 0, 0, 0.555);
+
+                            h4 {
+                                font-size: 22px;
+                                line-height: 1.12;
+                                font-weight: 500;
+                            }
+
+                            p {
+                                margin-top: 30px;
+                                margin-bottom: 0px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

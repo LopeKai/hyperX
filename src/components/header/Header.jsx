@@ -59,10 +59,10 @@ export default function Header(props) {
                             <Link to="/power">Carregadores</Link>
                         </li>
                         <li>
-                            <a href="/">Armazenamento</a>
+                            <a href="https://www.kingston.com/br/ssd/gaming/kingston-fury-renegade-nvme-m2-ssd" target="_blank">Armazenamento</a>
                         </li>
                         <li>
-                            <a href="/">Eyewear</a>
+                            <Link to="/eyewear">Eyewear</Link>
                         </li>
                         <li>
                             <a href="/">Software NGENUITY</a>

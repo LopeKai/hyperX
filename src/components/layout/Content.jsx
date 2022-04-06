@@ -9,6 +9,7 @@ import Keabords from '../../pages/keabords/Keabords'
 import Mice from '../../pages/mice/Mice'
 import MousePads from '../../pages/mousePads/MousePads'
 import Power from '../../pages/power/Power'
+import Eyewear from '../../pages/eyewear/Eyewear'
 
 export default function Content() {
     return (
@@ -26,16 +27,19 @@ export default function Content() {
                 <Route path="/mic" element={<Mic />} />
             </Routes>
             <Routes>
-                <Route path="/keabords" element={<Keabords/>} />
+                <Route path="/keabords" element={<Keabords />} />
             </Routes>
             <Routes>
-                <Route path="/mice" element={<Mice />}/>
+                <Route path="/mice" element={<Mice />} />
             </Routes>
             <Routes>
                 <Route path="/mouse-pad" element={<MousePads />} />
             </Routes>
             <Routes>
-                <Route path="power" element={<Power />}  />
+                <Route path="/power" element={<Power />} />
+            </Routes>
+            <Routes>
+                <Route path="/eyewear" element={<Eyewear />} />
             </Routes>
         </main>
     )
